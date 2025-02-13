@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./image_src/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.container-left {
+    font-family: "Prompt", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    font-family: "Prompt", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
+    flex-wrap: wrap;
+}
+
+#home, #about, #contact {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#home:hover, #about:hover, #contact:hover {
+    background-color: #f78d00;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #f78d00;
+}
+
+.input {
+    background-color: #184a57;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    height: 2rem;
+    padding-left: 10px;
+    background-image: url("./image_src/Untitled_design__1_-removebg-preview.png");
+    background-size: 18px;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.782);
+    opacity: 1;
+    font-family: "Prompt", serif;
+    font-style: normal;
+}
+
+p {
+    color: #f78d00;
+    font-family: "Pacifico", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: -20px;
+}
+
+h1 {
+    font-family: "Prompt", serif;
+    color: #184a57;
+    font-size: 170px;
+    margin-top: -90px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container-1 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .home-content {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    h1 {
+        font-size: 120px;
+        margin-top: -50px;
+    }
+    p {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    .container-1 {
+        font-size: 16px;
+        gap: 1rem;
+    }
+    .home-content {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 90px;
+        margin-top: -40px;
+    }
+    p {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: auto;
+        background-position: center;
+
+    }
+    nav {
+        padding-top: 2rem;
+    }
+    .container-1 {
+        font-size: 14px;
+        gap: 0.5rem;
+    }
+    .home-content {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 70px;
+        margin-top: -30px;
+    }
+    p {
+        font-size: 40px;
+    }
+    .input {
+        width: 100%;
+    }
+}
